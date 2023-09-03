@@ -19,7 +19,7 @@ class PostView(APIView):
         for post in posts:
             obj = {
                 "title": post.title,
-                "image": "http://localhost" + post.image.url
+                "image": "http://9archikblog.ru" + post.image.url
                 if post.image
                 else None,
                 "theme": post.theme,
@@ -40,7 +40,7 @@ class PostIDView(APIView):
             {
                 "title": post.title,
                 "content": post.content,
-                "image": "http://localhost" + post.image.url
+                "image": "http://9archikblog.ru" + post.image.url
                 if post.image
                 else None,
                 "theme": post.theme,

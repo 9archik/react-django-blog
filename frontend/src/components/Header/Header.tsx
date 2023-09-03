@@ -12,7 +12,7 @@ const Header = () => {
 	const { width } = useWindowDimensions();
 	const [burger, setBurger] = useState<boolean>(false);
 	const { data, fetchNow, error, loading, errorCode } = useFetch({
-		url: 'http://localhost/api/logout/',
+		url: 'http://9archikblog.ru/api/logout/',
 		enabled: false,
 		options: {
 			method: 'POST',

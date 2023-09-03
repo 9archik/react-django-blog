@@ -17,7 +17,7 @@ function App() {
 	const [checkAccount, setCheckAccount] = useState<boolean>(false);
 	const { login, setLogin } = useContext(UserContext) as IUserLogin;
 	const { data, fetchNow, error, loading, errorCode } = useFetch({
-		url: 'http://localhost/api/token/refresh/',
+		url: 'http://9archikblog.ru/api/token/refresh/',
 		enabled: true,
 		options: {
 			method: 'POST',

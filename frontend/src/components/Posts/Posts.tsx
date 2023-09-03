@@ -16,7 +16,7 @@ interface IPostList {
 
 const Posts = () => {
 	const { data, loading, error, errorCode } = useFetch<IPostList>({
-		url: 'http://localhost/api/posts/',
+		url: 'http://9archikblog.ru/api/posts/',
 	});
 
 	const navigate = useNavigate();

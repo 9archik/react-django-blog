@@ -39,7 +39,7 @@ const Login = () => {
 	const Json: { [key: string]: string } = convertToJson();
 
 	const { data, fetchNow, error, loading, errorCode } = useFetch<{ error: string | null }>({
-		url: 'http://localhost/api/login/',
+		url: 'http://9archikblog.ru/api/login/',
 		enabled: false,
 		options: {
 			method: 'POST',

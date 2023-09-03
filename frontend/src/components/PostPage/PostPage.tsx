@@ -26,7 +26,7 @@ const PostPage = () => {
 	const { id } = useParams();
 
 	const { data, loading, error, errorCode } = useFetch<IPostID>({
-		url: `http://localhost/api/post/${id}/`,
+		url: `http://9archikblog.ru/api/post/${id}/`,
 	});
 
 	if (errorCode === 404) {

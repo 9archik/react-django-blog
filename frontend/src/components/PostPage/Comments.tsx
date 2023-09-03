@@ -22,12 +22,12 @@ const Comments = () => {
 		error: commentError,
 		fetchNow: fetchComments,
 	} = useFetch<IPostCommentID[]>({
-		url: `http://localhost/api/comments/${id}/`,
+		url: `http://9archikblog.ru/api/comments/${id}/`,
 		enabled: false,
 	});
 
 	const { data, fetchNow } = useFetch({
-		url: `http://localhost/api/comments/${id}/`,
+		url: `http://9archikblog.ru/api/comments/${id}/`,
 		enabled: false,
 		options: {
 			method: 'POST',

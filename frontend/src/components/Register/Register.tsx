@@ -50,7 +50,7 @@ const Register = () => {
 	};
 	const Json: { [key: string]: string } = convertToJson();
 	const { data, fetchNow, error, loading, errorCode } = useFetch<{ error: string | null }>({
-		url: 'http://localhost/api/register/',
+		url: 'http://9archikblog.ru/api/register/',
 		enabled: false,
 		options: {
 			method: 'POST',
