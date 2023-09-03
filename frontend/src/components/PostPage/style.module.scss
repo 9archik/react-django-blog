@@ -1,0 +1,115 @@
+@import "./../../index.scss";
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+
+        // @media (max-width: 1024px) {
+        // }
+
+        .postImageCont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .postImage {
+                max-width: 100%;
+                max-height: 400px;
+                margin: 50px 0 0 0;
+
+                @media (max-width: 767px) {
+                    max-height: 300px;
+                }
+            }
+        }
+
+        .text {
+            color: $white-color;
+            margin: 20px 0 0 0;
+            line-height: 2em;
+            text-align: left;
+        }
+
+        .comments {
+            width: 100%;
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                margin: 30px 0 0 0;
+                h5 {
+                    color: $white-color;
+                }
+
+                .error {
+                    color: red;
+                }
+            }
+
+            .inputWrapper {
+                margin: 20px 0 0;
+
+                .textField {
+                    width: 100%;
+                    padding: 10px 0px;
+                    color: $white-color;
+                    resize: none;
+                    background-color: transparent;
+                    border: 0;
+                    line-height: 2em;
+                    outline: 0;
+                }
+            }
+
+            .buttonContainer {
+                display: flex;
+                justify-content: flex-end;
+                padding: 0 20px;
+                margin: 10px 0 0 0;
+
+                button {
+                    padding: 10px 20px;
+                    color: $white-color;
+                    background: $add-color;
+                    border: 0;
+                    outline: 0;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+                .info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .avatar {
+                        border-radius: 100%;
+                        width: 44px;
+                        height: 44px;
+                    }
+
+                    .infoText {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 5px;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
