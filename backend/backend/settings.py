@@ -219,5 +219,5 @@ CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:3000",
     "http://192.168.43.186:3000",
     "http://localhost",
-    "http://9archikblog.ru/"
+    "http://9archikblog.ru"
 ]
