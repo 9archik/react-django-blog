@@ -32,7 +32,13 @@ SECRET_KEY = "django-insecure-s$_5#)s3&f^v$&g83aess&((o*)n-%4=py+*-$hl#@*yp%d_n!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "localhost:3000", "127.0.0.1", "backend", "9archikblog.ru"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "localhost:3000",
+    "127.0.0.1",
+    "backend",
+    "9archikblog.ru",
+]
 
 
 # Application definition
@@ -112,6 +118,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"  # routing.py will handle the ASGI
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -122,7 +131,7 @@ DATABASES = {
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "Reroco34",
-        "HOST":"db",
+        "HOST": "db",
         "PORT": 5432,
     }
 }
@@ -157,7 +166,7 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_LIFETIME": timedelta(days=90),
     "AUTH_COOKIE": "access_token",  # Cookie name. Enles cookies if value is set.
     "AUTH_COOKIE_DOMAIN": None,  # A string like "example.com", or None for standard domain cookie.
-    "AUTH_COOKIE_SECURE": True,  # Whether the auth cookies should be secure (https:// only).
+    "AUTH_COOKIE_SECURE": False,  # Whether the auth cookies should be secure (https:// only).
     "AUTH_COOKIE_HTTP_ONLY": False,  # Http only cookie flag.It's not fetch by javascript.
     "AUTH_COOKIE_PATH": "/",  # The path of the auth cookie.
     "AUTH_COOKIE_SAMESITE": "None",
@@ -219,5 +228,5 @@ CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:3000",
     "http://192.168.43.186:3000",
     "http://localhost",
-    "http://9archikblog.ru"
+    "http://9archikblog.ru",
 ]
