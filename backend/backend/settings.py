@@ -118,9 +118,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"  # routing.py will handle the ASGI
 
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
